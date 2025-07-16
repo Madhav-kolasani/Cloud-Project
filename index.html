@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loader">
+        <div class="loader-inner">
+            <div class="loader-spinner"></div>
+            <div class="loader-text">LOADING</div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#home" class="logo">Portfolio</a>
+                <div class="nav-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#certifications">Certifications</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#hackathons">Hackathons</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="fade-in">Hi, I'm <span>Your Name</span></h1>
+                <p class="fade-in">Full Stack Developer & UI/UX Designer passionate about creating innovative solutions and beautiful user experiences.</p>
+                <div class="fade-in">
+                    <a href="#contact" class="btn">Get In Touch</a>
+                    <a href="your-resume.pdf" download class="btn download">Download CV</a>
+                </div>
+                <div class="social-links fade-in">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+                <p>Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image slide-in-left">
+                    <img src="/api/placeholder/500/500" alt="Profile Photo">
+                </div>
+                <div class="about-text slide-in-right">
+                    <h3>Who am I?</h3>
+                    <p>I'm a passionate Full Stack Developer with a strong background in web development and software engineering. With [X] years of experience, I specialize in creating responsive, user-friendly applications that solve real-world problems.</p>
+                    <p>I have a Bachelor's degree in Computer Science from [University Name] and have worked with various technologies throughout my career. My approach combines technical expertise with creative problem-solving to deliver exceptional results.</p>
+                    <p>When I'm not coding, you can find me [Your Hobbies/Interests]. I believe in continuous learning and staying updated with the latest industry trends and technologies.</p>
+                    <a href="#contact" class="btn">Let's Connect</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-title">
+                <h2>Skills & Technologies</h2>
+                <p>My technical expertise</p>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category bounce-in">
+                    <h3>Front-End</h3>
+                    <ul class="skill-list">
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>React.js</li>
+                        <li>Vue.js</li>
+                        <li>Angular</li>
+                        <li>Tailwind CSS</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+                <div class="skill-category bounce-in">
+                    <h3>Back-End</h3>
+                    <ul class="skill-list">
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>Python (Django/Flask)</li>
+                        <li>PHP</li>
+                        <li>Java</li>
+                        <li>RESTful APIs</li>
+                        <li>GraphQL</li>
+                    </ul>
+                </div>
+                <div class="skill-category bounce-in">
+                    <h3>Database</h3>
+                    <ul class="skill-list">
+                        <li>MongoDB</li>
+                        <li>MySQL</li>
+                        <li>PostgreSQL</li>
+                        <li>Firebase</li>
+                        <li>Redis</li>
+                        <li>ORM/ODM</li>
+                        <li>Database Design</li>
+                    </ul>
+                </div>
+                <div class="skill-category bounce-in">
+                    <h3>DevOps & Tools</h3>
+                    <ul class="skill-list">
+                        <li>Git & GitHub</li>
+                        <li>Docker</li>
+                        <li>AWS</li>
+                        <li>CI/CD</li>
+                        <li>Webpack</li>
+                        <li>Jest & Testing</li>
+                        <li>Agile Methodologies</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>Projects</h2>
+                <p>Some of my best work</p>
+            </div>
+            <div class="projects-container">
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="/api/placeholder/600/400" alt="Project 1">
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>A full-stack e-commerce platform with user authentication, product catalog, shopping cart, and payment integration.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">MongoDB</span>
+                            <span class="project-tag">Express</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" title="View Code"><i class="fab fa-github"></i></a>
+                            <a href="#" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="/api/placeholder/600/400" alt="Project 2">
+                    </div>
+                    <div class="project-content">
+                        <h3>AI Task Manager</h3>
+                        <p>A smart task management application that uses AI to prioritize and suggest optimal task scheduling.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Vue.js</span>
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Flask</span>
+                            <span class="project-tag">TensorFlow</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" title="View Code"><i class="fab fa-github"></i></a>
+                            <a href="#" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="/api/placeholder/600/400" alt="Project 3">
+                    </div>
+                    <div class="project-content">
+                        <h3>Social Media Dashboard</h3>
+                        <p>A dashboard that aggregates and analyzes social media metrics across multiple platforms in real-time.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Angular</span>
+                            <span class="project-tag">D3.js</span>
+                            <span class="project-tag">Firebase</span>
+                            <span class="project-tag">OAuth</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" title="View Code"><i class="fab fa-github"></i></a>
+                            <a href="#" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <div class="section-title">
+                <h2>Certifications & Courses</h2>
+                <p>My professional development</p>
+            </div>
+            <div class="certifications-container">
+                <div class="certification-card slide-in-left">
+                    <h3>AWS Certified Solutions Architect</h3>
+                    <p class="provider">Amazon Web Services</p>
+                    <p>Validated expertise in designing and deploying scalable systems on AWS infrastructure.</p>
+                    <p class="date">Issued: January 2023</p>
+                    <a href="#" class="view-cert">View Certificate <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="certification-card slide-in-left">
+                    <h3>Full Stack Web Development</h3>
+                    <p class="provider">Udemy</p>
+                    <p>Comprehensive training in modern web development technologies and best practices.</p>
+                    <p class="date">Issued: March 2022</p>
+                    <a href="#" class="view-cert">View Certificate <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="certification-card slide-in-left">
+                    <h3>Machine Learning Specialization</h3>
+                    <p class="provider">Coursera</p>
+                    <p>Advanced study of machine learning algorithms, implementation, and practical applications.</p>
+                    <p class="date">Issued: September 2022</p>
+                    <a href="#" class="view-cert">View Certificate <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="certification-card slide-in-left">
+                    <h3>UI/UX Design Professional</h3>
+                    <p class="provider">Interaction Design Foundation</p>
+                    <p>Mastery of user-centered design principles and usability best practices.</p>
+                    <p class="date">Issued: May 2023</p>
+                    <a href="#" class="view-cert">View Certificate <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-title">
+                <h2>Work Experience</h2>
+                <p>My professional journey</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <p class="timeline-date">2023 - Present</p>
+                        <h3>Senior Full Stack Developer</h3>
+                        <p class="company">Tech Innovations Inc.</p>
+                        <p>Led a team of developers in creating scalable web applications. Implemented CI/CD pipelines and microservices architecture. Reduced page load times by 40% through optimization.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <p class="timeline-date">2021 - 2023</p>
+                        <h3>Front-End Developer</h3>
+                        <p class="company">Digital Solutions Ltd.</p>
+                        <p>Developed responsive user interfaces using React and Redux. Collaborated with UX designers to implement pixel-perfect designs. Introduced unit testing that improved code quality by 30%.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <p class="timeline-date">2019 - 2021</p>
+                        <h3>Web Developer</h3>
+                        <p class="company">Creative Agency</p>
+                        <p>Built client websites using HTML, CSS, and JavaScript. Implemented CMS solutions for content management. Optimized websites for SEO and performance.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <p class="timeline-date">2018 - 2019</p>
+                        <h3>Junior Developer Intern</h3>
+                        <p class="company">StartUp Ventures</p>
+                        <p>Assisted in the development of web applications. Learned version control and agile methodologies. Contributed to UI component library development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hackathons Section -->
+    <section id="hackathons" class="hackathons">
+        <div class="container">
+            <div class="section-title">
+                <h2>Hackathons</h2>
+                <p>Competitions and coding challenges</p>
+            </div>
+            <div class="hackathon-container">
+                <div class="hackathon-card bounce-in">
+                    <div class="hackathon-image">
+                        <img src="/api/placeholder/600/400" alt="Hackathon 1">
+                    </div>
+                    <div class="hackathon-content">
+                        <h3>Global Tech Hackathon</h3>
+                        <p class="date-location">June 2023 • Virtual</p>
+                        <p>Developed an AI-powered health monitoring system that predicts potential health issues based on daily activity patterns.</p>
+                        <p class="prize">1st Place Winner</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+                <div class="hackathon-card bounce-in">
+                    <div class="hackathon-image">
+                        <img src="/api/placeholder/600/400" alt="Hackathon 2">
+                    </div>
+                    <div class="hackathon-content">
+                        <h3>Sustainability Code Jam</h3>
+                        <p class="date-location">November 2022 • New York</p>
+                        <p>Created a platform that connects food businesses with local shelters to reduce food waste and address hunger in communities.</p>
+                        <p class="prize">Best Impact Solution</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+                <div class="hackathon-card bounce-in">
+                    <div class="hackathon-image">
+                        <img src="/api/placeholder/600/400" alt="Hackathon 3">
+                    </div>
+                    <div class="hackathon-content">
+                        <h3>Finance Innovation Challenge</h3>
+                        <p class="date-location">March 2022 • San Francisco</p>
+                        <p>Built a blockchain-based micro-lending platform that enables secure peer-to-peer financial assistance in underserved communities.</p>
+                        <p class="prize">Runner-up & Public Choice Award</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Me</h2>
+                <p>Let's get in touch</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info slide-in-left">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>San Francisco, CA, USA</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:your.email@example.com">your.email@example.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <a href="tel:+1234567890">+1 (123) 456-7890</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Website</h4>
+                            <a href="https://yourwebsite.com" target="_blank">yourwebsite.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form slide-in-right">
+                    <h3>Send Me a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Your Name</h3>
+                <p>Building innovative solutions and creating memorable digital experiences.</p>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-dribbble"></i></a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
