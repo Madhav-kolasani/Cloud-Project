@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Madhav's Portfolio</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- For stars animation -->
+    <div class="stars"></div>
+
     <!-- Loading Animation -->
     <div class="loader">
         <div class="loader-inner">
-            <div class="loader-spinner"></div>
+          <div class="loader-spinner"></div>
             <div class="loader-text">LOADING</div>
         </div>
     </div>
@@ -34,7 +37,7 @@
                     <a href="#projects">Projects</a>
                     <a href="#certifications">Certifications</a>
                     <a href="#experience">Experience</a>
-                    <a href="#hackathons">Hackathons</a>
+                    <a href="#hackathons">Achievements</a>
                     <a href="#contact">Contact</a>
                 </div>
                 <div class="burger">
@@ -55,17 +58,17 @@
         </div>
         <div class="container">
             <div class="hero-content">
-                <h1 class="fade-in">Hi, I'm <span>Your Name</span></h1>
-                <p class="fade-in">Full Stack Developer & UI/UX Designer passionate about creating innovative solutions and beautiful user experiences.</p>
+                <h1 class="fade-in">Hi, I'm <span>Yagna Madhav</span></h1>
+                <p class="fade-in">Data Science Enthusiast & Problem Solver passionate about extracting insights from data and building intelligent, data-driven solutions.</p>
                 <div class="fade-in">
                     <a href="#contact" class="btn">Get In Touch</a>
-                    <a href="your-resume.pdf" download class="btn download">Download CV</a>
+                    <a href="./assets/resume1.pdf" download class="btn download">Download CV</a>
                 </div>
                 <div class="social-links fade-in">
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/Madhav-kolasani"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/madhav-kolasani/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://x.com/home"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/madhav.kolasani/"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
@@ -80,13 +83,13 @@
             </div>
             <div class="about-content">
                 <div class="about-image slide-in-left">
-                    <img src="/api/placeholder/500/500" alt="Profile Photo">
+                    <img src="./assets/ID.png" alt="Profile Photo">
                 </div>
                 <div class="about-text slide-in-right">
                     <h3>Who am I?</h3>
-                    <p>I'm a passionate Full Stack Developer with a strong background in web development and software engineering. With [X] years of experience, I specialize in creating responsive, user-friendly applications that solve real-world problems.</p>
-                    <p>I have a Bachelor's degree in Computer Science from [University Name] and have worked with various technologies throughout my career. My approach combines technical expertise with creative problem-solving to deliver exceptional results.</p>
-                    <p>When I'm not coding, you can find me [Your Hobbies/Interests]. I believe in continuous learning and staying updated with the latest industry trends and technologies.</p>
+                    <p>Hi, I’m Madhav, a third-year engineering student passionate about software development and building impactful tech solutions. I’ve developed a real-time voice translator web app using Flask, JavaScript, HTML, and CSS, and created an AI-powered chatbot capable of understanding and responding intelligently to user queries.</p>
+                    <p>I also have a strong interest in data visualization — one of my favorite projects is a Netflix dashboard built using Tableau, designed to analyze and present streaming data in a clear, insightful way. I'm proficient in C++, Python, and JavaScript, and skilled with tools like Tableau and Excel. I enjoy working on projects that fuse innovation with practical utility, and I’m always eager to learn, experiment, and push the boundaries of what I can build.</p>
+                    <!-- <p>When I'm not coding, you can find me [Your Hobbies/Interests]. I believe in continuous learning and staying updated with the latest industry trends and technologies.</p> -->
                     <a href="#contact" class="btn">Let's Connect</a>
                 </div>
             </div>
@@ -102,53 +105,78 @@
             </div>
             <div class="skills-container">
                 <div class="skill-category bounce-in">
-                    <h3>Front-End</h3>
+                    <!-- <h3>Front-End</h3>
                     <ul class="skill-list">
-                        <li>HTML5 & CSS3</li>
-                        <li>JavaScript (ES6+)</li>
-                        <li>React.js</li>
-                        <li>Vue.js</li>
-                        <li>Angular</li>
-                        <li>Tailwind CSS</li>
-                        <li>Responsive Design</li>
+                        <li><i class="fa-brands fa-html5"></i> HTML5 & <i class="fa-brands fa-css3-alt"></i> CSS3</li>
+                        <li><i class="fa-brands fa-js"></i> JavaScript (ES6+)</li>
+                        <li><i class="fa-brands fa-react"></i> React.js</li>
+                        <li><i class="fa-brands fa-vuejs"></i> Vue.js</li>
+                        <li><i class="fa-brands fa-angular"></i> Angular</li>
+                        <li><i class="fa-brands fa-css3"></i> Tailwind CSS</li>
+                        <li><i class="fa-solid fa-mobile-screen"></i> Responsive Design</li>
+                    </ul> -->
+                    <h3>Languages</h3>
+                    <ul class="skill-list">
+                        <li><i class="fa-solid fa-code"></i> C++</li>
+                        <li><i class="fa-brands fa-java"></i> Java</li>
+                        <li><i class="fa-brands fa-python"></i> Python</li>
+                        <li><i class="fa-brands fa-html5"></i> HTML5</li>
+                        <li><i class="fa-brands fa-css3-alt"></i> CSS3</li>
+                        <li><i class="fa-brands fa-js"></i> JavaScript</li>
+                        <!-- <li><i class="fa-solid fa-mobile-screen"></i> Responsive Design</li> -->
                     </ul>
                 </div>
                 <div class="skill-category bounce-in">
-                    <h3>Back-End</h3>
+                    <!-- <h3>Database</h3>
                     <ul class="skill-list">
-                        <li>Node.js</li>
-                        <li>Express.js</li>
-                        <li>Python (Django/Flask)</li>
-                        <li>PHP</li>
-                        <li>Java</li>
-                        <li>RESTful APIs</li>
-                        <li>GraphQL</li>
-                    </ul>
-                </div>
-                <div class="skill-category bounce-in">
+                        <li><i class="fa-solid fa-leaf"></i> MongoDB</li>
+                        <li><i class="fa-solid fa-database"></i> MySQL</li>
+                        <li><i class="fa-solid fa-database"></i> PostgreSQL</li>
+                        <li><i class="fa-solid fa-fire"></i> Firebase</li>
+                        <li><i class="fa-solid fa-memory"></i> Redis</li>
+                        <li><i class="fa-solid fa-table"></i> ORM/ODM</li>
+                        <li><i class="fa-solid fa-diagram-project"></i> Database Design</li>
+                    </ul> -->
                     <h3>Database</h3>
                     <ul class="skill-list">
-                        <li>MongoDB</li>
-                        <li>MySQL</li>
-                        <li>PostgreSQL</li>
-                        <li>Firebase</li>
-                        <li>Redis</li>
-                        <li>ORM/ODM</li>
-                        <li>Database Design</li>
+                        <li><i class="fa-solid fa-leaf"></i> MongoDB</li>
+                        <li><i class="fa-solid fa-database"></i> MySQL</li>
+                        <li><i class="fa-brands fa-postgresql"></i> PostgreSQL</li>
                     </ul>
                 </div>
                 <div class="skill-category bounce-in">
-                    <h3>DevOps & Tools</h3>
+                    <!-- <h3>Back-End</h3>
                     <ul class="skill-list">
-                        <li>Git & GitHub</li>
-                        <li>Docker</li>
-                        <li>AWS</li>
-                        <li>CI/CD</li>
-                        <li>Webpack</li>
-                        <li>Jest & Testing</li>
-                        <li>Agile Methodologies</li>
+                        <li><i class="fa-brands fa-node-js"></i> Node.js</li>
+                        <li><i class="fa-brands fa-node"></i> Express.js</li>
+                        <li><i class="fa-brands fa-python"></i> Python (Django/Flask)</li>
+                        <li><i class="fa-brands fa-php"></i> PHP</li>
+                        <li><i class="fa-brands fa-java"></i> Java</li>
+                        <li><i class="fa-solid fa-server"></i> RESTful APIs</li>
+                        <li><i class="fa-solid fa-diagram-project"></i> GraphQL</li>
+                    </ul> -->
+                    <h3>Tools</h3>
+                    <ul class="skill-list">
+                        <li><i class="fa-solid fa-chart-bar"></i> Tableau</li>
+                        <li><i class="fa-solid fa-filter"></i> Tableau Prep</li>
+                        <li><i class="fa-brands fa-git-alt"></i> Git</li>
+                        <li><i class="fa-brands fa-github"></i> GitHub</li>
+                        <li><i class="fa-brands fa-linux"></i> Linux</li>
+                        <li><i class="fa-solid fa-file-excel"></i> Excel</li>
                     </ul>
                 </div>
+                <!-- <div class="skill-category bounce-in">
+                    <h3>DevOps & Tools</h3>
+                    <ul class="skill-list">
+                        <li><i class="fa-brands fa-git-alt"></i> Git & <i class="fa-brands fa-github"></i> GitHub</li>
+                        <li><i class="fa-brands fa-docker"></i> Docker</li>
+                        <li><i class="fa-brands fa-aws"></i> AWS</li>
+                        <li><i class="fa-solid fa-infinity"></i> CI/CD</li>
+                        <li><i class="fa-solid fa-cube"></i> Webpack</li>
+                        <li><i class="fa-solid fa-vial"></i> Jest & Testing</li>
+                        <li><i class="fa-solid fa-users-gear"></i> Agile Methodologies</li>
+                    </ul>
+                </div> -->
             </div>
         </div>
     </section>
@@ -163,58 +191,80 @@
             <div class="projects-container">
                 <div class="project-card fade-in">
                     <div class="project-image">
-                        <img src="/api/placeholder/600/400" alt="Project 1">
+                        <img src="./assets/fakenews.png" alt="Project 1">
                     </div>
                     <div class="project-content">
-                        <h3>E-Commerce Platform</h3>
-                        <p>A full-stack e-commerce platform with user authentication, product catalog, shopping cart, and payment integration.</p>
+                        <h3>📰 Fake News Detection System</h3>
+                        <p>A machine learning-based web application designed to detect and classify news articles as real or fake. The system analyzes the textual content of news using classification algorithms like Logistic Regression and TF-IDF vectorization to determine the authenticity. The goal is to combat misinformation by providing a simple and fast tool for verifying news credibility.</p>
                         <div class="project-tags">
-                            <span class="project-tag">React</span>
-                            <span class="project-tag">Node.js</span>
-                            <span class="project-tag">MongoDB</span>
-                            <span class="project-tag">Express</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" title="View Code"><i class="fab fa-github"></i></a>
-                            <a href="#" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card fade-in">
-                    <div class="project-image">
-                        <img src="/api/placeholder/600/400" alt="Project 2">
-                    </div>
-                    <div class="project-content">
-                        <h3>AI Task Manager</h3>
-                        <p>A smart task management application that uses AI to prioritize and suggest optimal task scheduling.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">Vue.js</span>
                             <span class="project-tag">Python</span>
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JavaScript</span>
                             <span class="project-tag">Flask</span>
-                            <span class="project-tag">TensorFlow</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" title="View Code"><i class="fab fa-github"></i></a>
-                            <a href="#" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/Madhav-kolasani/Fake-News-Detector" target="_blank" title="View Code"><i class="fab fa-github"></i></a>
+                            <a href="https://fake-news-detector-pi.vercel.app/" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="project-card fade-in">
                     <div class="project-image">
-                        <img src="/api/placeholder/600/400" alt="Project 3">
+                        <img src="./assets/netflix.png" alt="Project 2">
                     </div>
                     <div class="project-content">
-                        <h3>Social Media Dashboard</h3>
-                        <p>A dashboard that aggregates and analyzes social media metrics across multiple platforms in real-time.</p>
+                        <h3>📊 Netflix Data Dashboard</h3>
+                        <p>An interactive dashboard created using Tableau to visualize and analyze Netflix content data. The dashboard provides insights into content trends, genre distribution, top-rated shows, release patterns, and more. It helps users explore Netflix’s vast library through clean and informative visualizations.</p>
                         <div class="project-tags">
-                            <span class="project-tag">Angular</span>
-                            <span class="project-tag">D3.js</span>
-                            <span class="project-tag">Firebase</span>
-                            <span class="project-tag">OAuth</span>
+                            <span class="project-tag">Tableau</span>
+                            <span class="project-tag">Tableau Prep</span>
+                            <!-- <span class="project-tag">Flask</span>
+                            <span class="project-tag">TensorFlow</span> -->
                         </div>
                         <div class="project-links">
                             <a href="#" title="View Code"><i class="fab fa-github"></i></a>
-                            <a href="#" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://public.tableau.com/app/profile/madhav.kolasani/viz/Netflix_17321646754570/Netflix" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="./assets/translator.png" alt="Project 3">
+                    </div>
+                    <div class="project-content">
+                        <h3>🌐 AI Live Voice Translator</h3>
+                        <p>A real-time voice translation web application that captures spoken input, converts it to text using speech recognition, translates it into the selected target language, and then plays the translated output using text-to-speech. This tool aims to bridge language barriers and enable seamless communication across different languages.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Flask</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Madhav-kolasani/Iterators" target="_blank" title="View Code"><i class="fab fa-github"></i></a>
+                            <a href="https://realtime-translator-ten.vercel.app/" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="./assets/Chatbot.png" alt="Project 2">
+                    </div>
+                    <div class="project-content">
+                        <h3>🤖 AI Chatbot</h3>
+                        <p>A smart web-based chatbot powered by the Gemini API, capable of holding natural and dynamic conversations with users. It integrates Google's advanced AI to provide accurate, context-aware responses in real time. This chatbot can be easily adapted for use cases like virtual assistants, help desks, or personal productivity tools.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Gemini API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Madhav-kolasani/AI-Advanced-ChatBot" target="_blank" title="View Code"><i class="fab fa-github"></i></a>
+                            <a href="https://madhavs-ai-chat-bot.vercel.app/" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                 </div>
@@ -231,32 +281,32 @@
             </div>
             <div class="certifications-container">
                 <div class="certification-card slide-in-left">
-                    <h3>AWS Certified Solutions Architect</h3>
-                    <p class="provider">Amazon Web Services</p>
-                    <p>Validated expertise in designing and deploying scalable systems on AWS infrastructure.</p>
-                    <p class="date">Issued: January 2023</p>
-                    <a href="#" class="view-cert">View Certificate <i class="fas fa-arrow-right"></i></a>
+                    <h3>Google Data Analytics</h3>
+                    <p class="provider">Google / Coursera</p>
+                    <p>Demonstrated proficiency in data cleaning, analysis, and visualization using tools such as SQL, R, Excel, and Tableau. Validated ability to derive actionable insights from data to support decision-making and business strategy.</p>
+                    <p class="date">Issued: November 2024</p>
+                    <a href="./assets/Certificates/Google_data.pdf" class="view-cert">View Certificate <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="certification-card slide-in-left">
-                    <h3>Full Stack Web Development</h3>
-                    <p class="provider">Udemy</p>
-                    <p>Comprehensive training in modern web development technologies and best practices.</p>
-                    <p class="date">Issued: March 2022</p>
-                    <a href="#" class="view-cert">View Certificate <i class="fas fa-arrow-right"></i></a>
+                    <h3>Cloud Computing</h3>
+                    <p class="provider">NPTEL</p>
+                    <p>Acquired foundational and advanced knowledge of cloud computing concepts including virtualization, service models (IaaS, PaaS, SaaS), resource provisioning, and cloud security. Gained hands-on experience on deployment strategies.</p>
+                    <p class="date">Issued: October 2024</p>
+                    <a href="./assets/Certificates/Cloud Computing.pdf" class="view-cert">View Certificate <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="certification-card slide-in-left">
-                    <h3>Machine Learning Specialization</h3>
+                    <h3>Data Structures and Algorithms – Self-Paced</h3>
+                    <p class="provider">GeeksforGeeks</p>
+                    <p>Developed strong problem-solving skills by mastering core data structures and algorithms including arrays, linked lists, stacks, queues, trees, graphs, dynamic programming, and more. </p>
+                    <p class="date">Issued: August 2024</p>
+                    <a href="./assets/Certificates/DSA.pdf" class="view-cert">View Certificate <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="certification-card slide-in-left">
+                    <h3>Data Analysis with Tableau</h3>
                     <p class="provider">Coursera</p>
-                    <p>Advanced study of machine learning algorithms, implementation, and practical applications.</p>
-                    <p class="date">Issued: September 2022</p>
-                    <a href="#" class="view-cert">View Certificate <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="certification-card slide-in-left">
-                    <h3>UI/UX Design Professional</h3>
-                    <p class="provider">Interaction Design Foundation</p>
-                    <p>Mastery of user-centered design principles and usability best practices.</p>
-                    <p class="date">Issued: May 2023</p>
-                    <a href="#" class="view-cert">View Certificate <i class="fas fa-arrow-right"></i></a>
+                    <p>Gained hands-on experience in visual analytics using Tableau. Learned to create interactive dashboards, perform data cleaning, and derive insights through various charting and storytelling techniques.</p>
+                    <p class="date">Issued: November 2024</p>
+                    <a href="./assets/Certificates/Tableau.pdf" class="view-cert">View Certificate <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -272,36 +322,39 @@
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <p class="timeline-date">2023 - Present</p>
-                        <h3>Senior Full Stack Developer</h3>
-                        <p class="company">Tech Innovations Inc.</p>
-                        <p>Led a team of developers in creating scalable web applications. Implemented CI/CD pipelines and microservices architecture. Reduced page load times by 40% through optimization.</p>
+                        <p class="timeline-date">May 2024 – August 2024 </p>
+                        <h3>Data Structures and Algorithms – Summer Training</h3>
+                        <p class="company">GeeksforGeeks (Self-Paced)</p>
+                        <p>Completed an intensive 16-week summer training program focused on data structures and algorithms. Strengthened algorithmic thinking and coding proficiency through hands-on problem-solving in arrays, linked lists, trees, graphs, sorting, recursion, and dynamic programming. Developed the ability to write optimized and efficient code for real-world problems.</p>
                     </div>
                 </div>
-                <div class="timeline-item">
+
+                <!-- <div class="timeline-item">
                     <div class="timeline-content">
                         <p class="timeline-date">2021 - 2023</p>
                         <h3>Front-End Developer</h3>
                         <p class="company">Digital Solutions Ltd.</p>
                         <p>Developed responsive user interfaces using React and Redux. Collaborated with UX designers to implement pixel-perfect designs. Introduced unit testing that improved code quality by 30%.</p>
                     </div>
-                </div>
-                <div class="timeline-item">
+                </div> -->
+
+                <!-- <div class="timeline-item">
                     <div class="timeline-content">
                         <p class="timeline-date">2019 - 2021</p>
                         <h3>Web Developer</h3>
                         <p class="company">Creative Agency</p>
                         <p>Built client websites using HTML, CSS, and JavaScript. Implemented CMS solutions for content management. Optimized websites for SEO and performance.</p>
                     </div>
-                </div>
-                <div class="timeline-item">
+                </div> -->
+
+                <!-- <div class="timeline-item">
                     <div class="timeline-content">
                         <p class="timeline-date">2018 - 2019</p>
                         <h3>Junior Developer Intern</h3>
                         <p class="company">StartUp Ventures</p>
                         <p>Assisted in the development of web applications. Learned version control and agile methodologies. Contributed to UI component library development.</p>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -315,30 +368,34 @@
             </div>
             <div class="hackathon-container">
                 <div class="hackathon-card bounce-in">
-                    <div class="hackathon-image">
+                    <!-- <div class="hackathon-image">
                         <img src="/api/placeholder/600/400" alt="Hackathon 1">
-                    </div>
+                    </div> -->
                     <div class="hackathon-content">
                         <h3>Global Tech Hackathon</h3>
-                        <p class="date-location">June 2023 • Virtual</p>
-                        <p>Developed an AI-powered health monitoring system that predicts potential health issues based on daily activity patterns.</p>
-                        <p class="prize">1st Place Winner</p>
-                        <a href="#" class="btn">View Project</a>
+                        <p class="date-location">February 2025</p>
+                        <p>Live Voice Translation System <br>
+                                <br>
+                            Built a real-time voice translation web application using Flask, JavaScript, and Web Speech API. Captured user speech, converted it to text, and translated it on the fly using a free translation API. Enabled seamless multi-language communication through an interactive browser interface.</p>
+                        <p class="prize">Secured top 30</p>
+                        <a href="https://realtime-translator-ten.vercel.app/" class="btn">View Project</a>
                     </div>
                 </div>
                 <div class="hackathon-card bounce-in">
-                    <div class="hackathon-image">
+                    <!-- <div class="hackathon-image">
                         <img src="/api/placeholder/600/400" alt="Hackathon 2">
-                    </div>
+                    </div> -->
                     <div class="hackathon-content">
-                        <h3>Sustainability Code Jam</h3>
-                        <p class="date-location">November 2022 • New York</p>
-                        <p>Created a platform that connects food businesses with local shelters to reduce food waste and address hunger in communities.</p>
+                        <h3>Web-e-Stan</h3>
+                        <p class="date-location">January 2025</p>  <!-- we can add location also June 2023 • Virtual-->
+                        <p>Fake News Detection System <br>
+                            <br>
+                            Developed a machine learning-based web application to classify news articles as real or fake using natural language processing (NLP) techniques. Integrated the model into a user-friendly website for real-time predictions and analysis.</p>
                         <p class="prize">Best Impact Solution</p>
-                        <a href="#" class="btn">View Project</a>
+                        <a href="https://fake-news-detector-pi.vercel.app/" class="btn">View Project</a>
                     </div>
                 </div>
-                <div class="hackathon-card bounce-in">
+                <!-- <div class="hackathon-card bounce-in">
                     <div class="hackathon-image">
                         <img src="/api/placeholder/600/400" alt="Hackathon 3">
                     </div>
@@ -349,7 +406,7 @@
                         <p class="prize">Runner-up & Public Choice Award</p>
                         <a href="#" class="btn">View Project</a>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -370,7 +427,7 @@
                         </div>
                         <div class="contact-details">
                             <h4>Location</h4>
-                            <p>San Francisco, CA, USA</p>
+                            <p>Phagwara, Punjab, India</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -379,7 +436,7 @@
                         </div>
                         <div class="contact-details">
                             <h4>Email</h4>
-                            <a href="mailto:your.email@example.com">your.email@example.com</a>
+                            <a href="mailto:your.email@example.com">madhavkolasani@gmail.com</a>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -388,7 +445,7 @@
                         </div>
                         <div class="contact-details">
                             <h4>Phone</h4>
-                            <a href="tel:+1234567890">+1 (123) 456-7890</a>
+                            <a href="tel:+1234567890">+91 9392212260</a>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -397,7 +454,7 @@
                         </div>
                         <div class="contact-details">
                             <h4>Website</h4>
-                            <a href="https://yourwebsite.com" target="_blank">yourwebsite.com</a>
+                            <a href="https://madhavs-portfolio.vercel.app/" target="_blank">myportfolio.com</a>
                         </div>
                     </div>
                 </div>
@@ -427,27 +484,26 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <h3>Your Name</h3>
+                <h3>Yagna Madhav Kolasani</h3>
                 <p>Building innovative solutions and creating memorable digital experiences.</p>
             </div>
             <div class="footer-social">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-dribbble"></i></a>
+                <a href="https://github.com/Madhav-kolasani"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/madhav-kolasani/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/home"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/madhav.kolasani/"><i class="fab fa-instagram"></i></a>
+                <a href="https://madhavs-portfolio.vercel.app/"><i class="fab fa-dribbble"></i></a>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+                <p>&copy; 2025 Madhav. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
     <!-- Back to Top Button -->
-    <a href="#" class="to-top">
+    <a href="#home" class="to-top">
         <i class="fas fa-arrow-up"></i>
     </a>
-
     <script src="script.js"></script>
 </body>
 </html>
